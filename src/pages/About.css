@@ -1,0 +1,146 @@
+.about-page {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+  color: #333;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.ufpr-logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  color: #1a365d;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #4a5568;
+  margin-bottom: 2rem;
+}
+
+.author-info {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.author-info h2 {
+  color: #1a365d;
+  margin-bottom: 1rem;
+}
+
+.author-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.institution, .project-type {
+  color: #4a5568;
+  margin-bottom: 0.3rem;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-content section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h2 {
+  color: #1a365d;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.tech-grid, .features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.tech-card, .feature-card {
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tech-card:hover, .feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tech-card h3, .feature-card h3 {
+  color: #2d3748;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.tech-card p, .feature-card p {
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.acknowledgments-section p, .mission-section p {
+  line-height: 1.8;
+  color: #2d3748;
+}
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #4a5568;
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 1rem;
+  }
+
+  .about-header h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .tech-grid, .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content section {
+    padding: 1.5rem;
+  }
+
+  .ufpr-logo {
+    width: 150px;
+  }
+} 

@@ -1,0 +1,84 @@
+.prevention-page {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 50px;
+}
+
+.prevention-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.prevention-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.prevention-card:hover {
+  transform: translateY(-10px);
+}
+
+.prevention-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.prevention-icon {
+  font-size: 2.5rem;
+  color: #2196F3;
+}
+
+.prevention-header h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+
+.prevention-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.prevention-list li {
+  padding: 10px 0;
+  color: #666;
+  position: relative;
+  padding-left: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.prevention-list li:last-child {
+  border-bottom: none;
+}
+
+.prevention-list li:before {
+  content: '•';
+  color: #2196F3;
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .prevention-grid {
+    grid-template-columns: 1fr;
+  }
+} 

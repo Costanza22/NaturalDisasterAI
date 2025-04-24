@@ -1,0 +1,136 @@
+.disasters-page {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 50px;
+}
+
+.disasters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.disaster-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.disaster-card:hover {
+  transform: translateY(-10px);
+}
+
+.disaster-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.disaster-icon {
+  font-size: 2.5rem;
+  color: #4CAF50;
+}
+
+.disaster-header h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+
+.disaster-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.disaster-tips {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.disaster-tips h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.disaster-tips ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.disaster-tips li {
+  padding: 8px 0;
+  color: #666;
+  position: relative;
+  padding-left: 25px;
+}
+
+.disaster-tips li:before {
+  content: '✓';
+  color: #4CAF50;
+  position: absolute;
+  left: 0;
+}
+
+.hurricane-navigation {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.hurricane-navigation h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.hurricane-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hurricane-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  color: #2c3e50;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hurricane-link:hover {
+  background: #e9ecef;
+  transform: translateX(5px);
+}
+
+.arrow-icon {
+  font-size: 1rem;
+  color: #4CAF50;
+}
+
+@media screen and (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .disasters-grid {
+    grid-template-columns: 1fr;
+  }
+} 
